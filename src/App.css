@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .App-logo {
@@ -25,4 +26,51 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.profile-cards {
+  /* border: 1px solid black; */
+  margin: 10px;
+  padding: 20px;
+  width: 230px;
+  /* height: 400px; */
+  background: rgb(235, 235, 235);
+}
+
+.profile-image {
+  /* border: 1px solid black; */
+  border-bottom: 1px solid white;
+  width: 230px;
+  height: 150px;
+  margin-bottom: 10px;
+
+}
+
+.venture-nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* border: 1px solid black; */
+  width: 230px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.nav-symbols {
+  /* border: 1px solid black; */
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+.venture-description {
+  /* border: 1px solid black; */
+  width: 230px;
+  /* height: 150px; */
+  /* overflow: scroll; */
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
 }
