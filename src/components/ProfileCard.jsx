@@ -18,13 +18,7 @@ class ProfileCard extends Component {
       description: 'I’m a catalyst, cultivator, convenor and curator, helping individuals and organisations experiment with new ways of working and being. I’m a member of the Golden Pandas livelihood pod, serve as an Enspiral Foundation Catalyst, engage in acts of ambassador-ing, and work with teams worldwide as a coach and facilitator. I convene Teal NZ, with over 350 members. And I like to write.',
       linkedin: 'https://www.linkedin.com/in/susan-basterfield-ab8104/',
       twitter: 'https://www.linkedin.com/in/susan-basterfield-ab8104/',
-      website: 'https://www.opentogrow.com',
-      email:' ',
-      venture:' ',
-      image_url:' ',
-      gravatar_url:' ',
-      ssb:' ',
-      role:' '
+      website: 'https://www.opentogrow.com' 
     }
   }
 
