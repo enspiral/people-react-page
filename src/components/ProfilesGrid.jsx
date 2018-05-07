@@ -22,12 +22,6 @@ class ProfilesGrid extends Component {
       >
         <ProfileCard />
         <ProfileCard />
-        <ProfileCard />
-        <ProfileCard />
-        <ProfileCard />
-        <ProfileCard />
-        <ProfileCard />
-        <ProfileCard />
       </Masonry>
      
     );
