@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Masonry from 'react-masonry-component';
+import communityData from '../example-data.js'
 
-import ProfileCard from './ProfileCard'
+// import ProfileCard from './ProfileCard'
+import ProfileCard from './ProfileCard.1'
 
 const masonryOptions = {
   transitionDuration: 0
@@ -10,6 +12,11 @@ const masonryOptions = {
 const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 class ProfilesGrid extends Component {
+  constructor() {
+    super();
+    this.state = communityData 
+  }
+
   render() {
     return (
       <Masonry
@@ -20,10 +27,17 @@ class ProfilesGrid extends Component {
         updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
         imagesLoadedOptions={imagesLoadedOptions} // default {}
       >
-        <ProfileCard />
-        <ProfileCard />
+      
+        {this.state.communityData ? 
+          this.state.communityData.map(function(item){
+            return <ProfileCard 
+                    person={item}
+                  />
+          })
+      :
+        <li/>
+      }
       </Masonry>
-     
     );
   }
 }
