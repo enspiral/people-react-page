@@ -32,16 +32,17 @@
   /* border: 1px solid black; */
   margin: 10px;
   padding: 10px;
-  width: 230px;
+  width: 200px;
   /* height: 400px; */
-  background: rgb(235, 235, 235);
+  background: rgb(220, 225, 223);
+  box-shadow:  0.5px 0.5px 0.5px 0.5px grey;
 }
 
 .profile-image {
   /* border: 1px solid black; */
   border-bottom: 1px solid white;
-  width: 230px;
-  height: 200px;
+  width: 200px;
+  /* height: 200px; */
   margin-bottom: 10px;
   overflow: hidden;
 }
@@ -52,7 +53,7 @@
   align-items: center;
   
   /* border: 1px solid black; */
-  width: 230px;
+  width: 200px;
   height: 30px;
   margin-bottom: 10px;
 }

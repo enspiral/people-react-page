@@ -3,7 +3,7 @@ import Masonry from 'react-masonry-component';
 import communityData from '../example-data.js'
 
 // import ProfileCard from './ProfileCard'
-import ProfileCard from './ProfileCard.1'
+import ProfileCard from './ProfileCard'
 
 const masonryOptions = {
   transitionDuration: 0
@@ -18,6 +18,8 @@ class ProfilesGrid extends Component {
   }
 
   render() {
+    console.log(this.state.communityData);
+
     return (
       <Masonry
         className={'my-gallery-class'} // default ''
