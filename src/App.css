@@ -29,59 +29,43 @@
 }
 
 .profile-cards {
-  /* border: 1px solid black; */
   margin: 10px;
   padding: 10px;
   width: 200px;
-  /* height: 400px; */
   background: rgb(220, 225, 223);
   box-shadow:  0.5px 0.5px 0.5px 0.5px grey;
 }
 
 .profile-image {
-  /* border: 1px solid black; */
   border-bottom: 1px solid white;
   width: 200px;
-  /* height: 200px; */
   margin-bottom: 10px;
   overflow: hidden;
 }
 
 .profile-info{
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  
-  /* border: 1px solid black; */
+  align-items: center; 
   width: 200px;
   height: 30px;
   margin-bottom: 10px;
 }
 
 .profile-name {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   margin-right: 5px;
 }
 
-/* .social-links {
-  height: 20px;
-} */
-
 .nav-symbols {
-  /* border: 1px solid black; */
   width: 20px;
   height: 20px;
   margin: 1px;
 }
 
 .profile-description {
-  /* border: 1px solid black; */
-  width: 230px;
-  /* height: 150px; */
-  /* overflow: scroll; */
   margin-bottom: 10px;
   text-align: left;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
 }
