@@ -40,7 +40,7 @@ class App extends Component {
 
 // getPeople fetchs data from the api
 function getPeople() {
-  return fetch(process.env.PERSON_API_URL, {
+  return fetch(process.env.REACT_APP_PERSON_API_URL, {
     method: 'get'
   }).then((response) => {
     console.info('Api request success: ', response)

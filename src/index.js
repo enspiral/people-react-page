@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+require('dotenv').config()
 
-process.env.PERSON_API_URL ? console.info('Api url: ', process.env.PERSON_API_URL) : console.error('Enviroment Variable PERSON_API_URL not defined!')
+process.env.REACT_APP_PERSON_API_URL ? console.info('Api url: ', process.env.REACT_APP_PERSON_API_URL) : console.error('Enviroment Variable REACT_APP_PERSON_API_URL not defined!')
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
