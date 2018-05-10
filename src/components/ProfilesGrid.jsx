@@ -11,6 +11,8 @@ const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 class ProfilesGrid extends Component {
   render() {
+    const {people} = this.props.people
+    console.log(people)
     return (
       <Masonry
         className={'my-gallery-class'} // default ''
