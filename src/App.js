@@ -19,6 +19,7 @@ class App extends Component {
   componentDidMount(){
     getPeople()
     .then((data) => {
+      console.log('getpeople data: ', data)
       this.setState({
         people: data
       }) 
@@ -42,9 +43,10 @@ function getPeople() {
   return fetch(process.env.PERSON_API_URL, {
     method: 'get'
   }).then((response) => {
+    console.info('Api request success: ', response)
     return response
   }).catch((err) => {
-    console.log('Request error: ', err)
+    console.error('Api request error: ', err)
   }) 
 }
 
