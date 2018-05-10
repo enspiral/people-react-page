@@ -19,8 +19,9 @@ class ProfilesGrid extends Component {
         disableImagesLoaded={false} // default false
         updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
         imagesLoadedOptions={imagesLoadedOptions} // default {}
-        { ...people.map((item) => {return <ProfileCard person={item}/>})}
-      />
+        >
+        { people.map((item) => {return <ProfileCard person={item}/>})}
+        </Masonry>
     )
   }
 }
