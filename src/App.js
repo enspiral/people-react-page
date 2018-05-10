@@ -44,7 +44,7 @@ function getPeople() {
     method: 'get'
   }).then((response) => {
     console.info('Api request success: ', response)
-    return response
+    return response.json()
   }).catch((err) => {
     console.error('Api request error: ', err)
   }) 
