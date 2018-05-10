@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ProfileImage extends Component {
-  render() {
+function ProfileImage (props) {
     return (
         <div className='profile-image'>
-          <img src='https://enspiral.com/wp-content/uploads/2016/06/susannewbw-e1489699011827.png' alt='name' width='100%' />
+          <img src={this.props.image} alt='name' width='100%'/>
         </div>
     )
   }
-}
-  
 
- export default ProfileImage; 
+ export default ProfileImage;    

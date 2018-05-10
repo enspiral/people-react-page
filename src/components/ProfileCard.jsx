@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import md5 from 'js-md5';
 
 import ProfileImage from './atoms/ProfileImage'
 import ProfileDescription from './atoms/ProfileDescription'
@@ -9,32 +9,23 @@ import ShowLinkedIn from './atoms/ShowLinkedIn'
 import ShowWebsite from './atoms/ShowWebsite'
 
 class ProfileCard extends Component {
-  // To do: extract constructor 
-  constructor() {
-    super();
-
-    this.state = {
-      name: 'Susan Basterfield',
-      description: 'I’m a catalyst, cultivator, convenor and curator, helping individuals and organisations experiment with new ways of working and being. I’m a member of the Golden Pandas livelihood pod, serve as an Enspiral Foundation Catalyst, engage in acts of ambassador-ing, and work with teams worldwide as a coach and facilitator. I convene Teal NZ, with over 350 members. And I like to write.',
-      linkedin: 'https://www.linkedin.com/in/susan-basterfield-ab8104/',
-      twitter: 'https://www.linkedin.com/in/susan-basterfield-ab8104/',
-      website: 'https://www.opentogrow.com' 
-    }
-  }
-
-  render (){
+  render(){
+    const {person} = this.props
+    console.log(person)
     return (
       <div className='profile-cards'>
-        <ProfileImage/>
+        {person['Personal email'] ? <ProfileImage image={'https://www.gravatar.com/avatar/' + md5(person['Personal email'].toLowerCase()) + '?s=200'} /> : <div/>}
         <div className='profile-info'>
-          <ProfileName name={this.state.name}/>
-          <ShowLinkedIn linkedin={this.state.linkedin}/>
-          <ShowTwitter twitter={this.state.twitter}/>
-          <ShowWebsite website={this.state.website}/>
+          {person.Name ? <ProfileName name={person.Name} /> : <span/>}
+          
+          {person.linkedin ? <ShowLinkedIn linkedin={person.linkedin}/> : <span/>}
+          {person.twitter ? <ShowTwitter twitter={person.twitter}/> : <span/>}
+          {person.website ? <ShowWebsite website={person.website}/> : <span/>}
         </div>
-        <ProfileDescription description={this.state.description}/>
+
+        {person['Your bio / introduction'] ? <ProfileDescription description={person['Your bio / introduction']}/> : <span/> }
       </div>
-    );
+    )
   }
 }
 
