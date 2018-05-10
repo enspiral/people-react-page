@@ -17,7 +17,7 @@ function ProfileCard (props) {
           <ShowTwitter twitter={props.twitter}/>
           <ShowWebsite website={props.website}/>
         </div>
-        <ProfileDescription description={props.description}/>
+        <ProfileDescription description={props.person.fields['Your bio / introduction']}/>
       </div>
     );
   
