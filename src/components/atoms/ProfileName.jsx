@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-
-class ProfileName extends Component {
-  render() {
-    // console.log(this.props)
+function ProfileName (props) {
     return (
       <div className='profile-name'>
         {this.props.name}
       </div>
     );
-  }
 }
 
 export default ProfileName;

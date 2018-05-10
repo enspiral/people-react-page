@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import Masonry from 'react-masonry-component';
 import communityData from '../example-data.js'
 
-// import ProfileCard from './ProfileCard'
 import ProfileCard from './ProfileCard'
 
 const masonryOptions = {
   transitionDuration: 0
 };
-
 const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 class ProfilesGrid extends Component {
@@ -18,8 +16,8 @@ class ProfilesGrid extends Component {
   }
 
   render() {
-    console.log(this.state.communityData);
-
+    const {people} = this.props.people
+    console.log(people)
     return (
       <Masonry
         className={'my-gallery-class'} // default ''

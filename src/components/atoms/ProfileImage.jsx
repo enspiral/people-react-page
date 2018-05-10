@@ -1,20 +1,11 @@
-import React, { Component } from 'react';
-import md5 from 'js-md5';
+import React from 'react';
 
-
-
-class ProfileImage extends Component {
-  // let src = this.props ? 'https://www.gravatar.com/avatar/' + md5(this.props.image.toLowerCase()) + '?s=200' : 'https://themarketingoak.files.wordpress.com/2015/07/circle-loading-animation.gif'
-  render() {
+function ProfileImage (props) {
     return (
         <div className='profile-image'>
-          {this.props.image ? 
-          <img src={'https://www.gravatar.com/avatar/' + md5(this.props.image.toLowerCase()) + '?s=200'} alt='name' width='100%'/>
-          : 'https://themarketingoak.files.wordpress.com/2015/07/circle-loading-animation.gif'
-          }
+          <img src={this.props.image} alt='name' width='100%'/>
         </div>
     )
   }
-}
 
  export default ProfileImage;    
