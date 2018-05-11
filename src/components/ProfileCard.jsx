@@ -30,6 +30,3 @@ class ProfileCard extends Component {
 }
 
 export default ProfileCard;
-
-// if key missing || if key exists but value missing {don't show}
-// if key exists && key has value {show}

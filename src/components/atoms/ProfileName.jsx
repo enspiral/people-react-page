@@ -3,7 +3,7 @@ import React from 'react';
 function ProfileName (props) {
     return (
       <div className='profile-name'>
-        {this.props.name}
+        {props.name}
       </div>
     );
 }
