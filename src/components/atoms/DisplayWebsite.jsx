@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import brands from '@fortawesome/fontawesome-free-brands'
+import faGlobe from '@fortawesome/fontawesome-free-solid/faGlobe'
 
 class DisplayWebsite extends Component {
   render() {
     return (
-      <span className='nav-symbols'><a href={this.props.website}><img src='/_images/_earth-globe.svg' alt='website-link' width='80%' /></a></span>
+      <FontAwesomeIcon icon={faGlobe} />
     );
   }
 }

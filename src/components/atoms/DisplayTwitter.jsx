@@ -6,7 +6,9 @@ import brands from '@fortawesome/fontawesome-free-brands'
 class DisplayTwitter extends Component {
   render() {
     return (
-      <FontAwesomeIcon icon={["fab", "twitter-square"]} />
+      <div className='social-icons'>
+        <FontAwesomeIcon icon={["fab", "twitter"]} size='1' color='darkgrey'/>
+      </div>
     );
   }
 }
