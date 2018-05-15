@@ -3,14 +3,13 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
 
 
-class DisplayTwitter extends Component {
-  render() {
+function DisplayTwitter (props) {
+  const {twitter} = props
     return (
       <div className='social-icons'>
-        <FontAwesomeIcon icon={["fab", "twitter"]} size='1' color='darkgrey'/>
+        <a href={twitter}><FontAwesomeIcon icon={["fab", "twitter"]} size='1' color='darkgrey'/></a>
       </div>
     );
-  }
 }
 
 export default DisplayTwitter;

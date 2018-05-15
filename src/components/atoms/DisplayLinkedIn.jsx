@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
 
-class DisplayLinkedIn extends Component {
-  render() {
+function DisplayLinkedIn (props) {
+  const {linkedin} = props
     return (
       <div className='social-icons'>
-        <FontAwesomeIcon icon={["fab", "linkedin"]} size='1' color='darkgrey'/>
+        <a href={linkedin}><FontAwesomeIcon icon={["fab", "linkedin"]} size='1' color='darkgrey'/></a>
       </div>
     );
-  }
 }
 
 export default DisplayLinkedIn;
