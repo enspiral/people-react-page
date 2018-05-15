@@ -11,7 +11,6 @@ import ShowWebsite from './atoms/ShowWebsite'
 class ProfileCard extends Component {
   render(){
     const {person} = this.props
-    console.log(person)
     return (
       <div className='profile-cards'>
         {person ? <ProfileImage image={person.gravatarUrl} /> : <div/>}
