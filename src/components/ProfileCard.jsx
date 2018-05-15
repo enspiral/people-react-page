@@ -1,28 +1,21 @@
 import React, { Component } from 'react';
-import md5 from 'js-md5';
 
 import ProfileImage from './atoms/ProfileImage'
-import ProfileDescription from './atoms/ProfileDescription'
-import ProfileName from './atoms/ProfileName'
-import ShowTwitter from './atoms/ShowTwitter'
-import ShowLinkedIn from './atoms/ShowLinkedIn'
-import ShowWebsite from './atoms/ShowWebsite'
+import InfoHeader from './molecules/InfoHeader'
+import InfoDescription from './atoms/InfoDescription'
 
 class ProfileCard extends Component {
   render(){
     const {person} = this.props
     return (
       <div className='profile-cards'>
-        {person ? <ProfileImage image={person.gravatarUrl} /> : <div/>}
-        <div className='profile-info'>
-          {person ? <ProfileName name={person.publicName} /> : <span/>}
-          
-          {person ? <ShowLinkedIn linkedin={person.publicLinkedin}/> : <span/>}
-          {person ? <ShowTwitter twitter={person.publicTwitter}/> : <span/>}
-          {person ? <ShowWebsite website={person.publicWebsite}/> : <span/>}
+        <ProfileImage image={person.gravatarUrl} />
+        <div className='info-wrapper'>
+          <div className='info-container'>
+            <InfoHeader person={person}/>
+            <InfoDescription description={person.publicDescription}/>
+          </div>
         </div>
-
-        {person ? <ProfileDescription description={person.publicDescription}/> : <span/> }
       </div>
     )
   }

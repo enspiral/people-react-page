@@ -20,7 +20,6 @@ function ProfilesGrid (props) {
       updateOnEachImageLoad={false} 
       imagesLoadedOptions={imagesLoadedOptions} 
       >
-      {/* {people.forEach((item, key) => {return <ProfileCard person={item}/>})} */}
       {map(people, (person, key) => {
         return <ProfileCard key={key} person={person} />
       }) }

@@ -28,33 +28,54 @@
   to { transform: rotate(360deg); }
 }
 
+.ambassadors {
+  display: flex;
+  flex-flow: row wrap;
+  /* width: 85%; */
+  height: 100px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px
+}
+
+.ambassador-lists {
+  margin: 8px;
+}
+
+#ambassador-image {
+  border: 5px solid cadetblue;
+  border-radius: 50%;
+}
+
 .profile-cards {
   margin: 10px;
-  padding: 10px;
-  width: 200px;
+  width: 220px;
   background: rgb(220, 225, 223);
-  box-shadow:  0.5px 0.5px 0.5px 0.5px grey;
+  /* box-shadow:  0.5px 0.5px 0.5px 0.5px grey; */
 }
 
-.profile-image {
-  border-bottom: 1px solid white;
-  width: 200px;
-  margin-bottom: 10px;
-  overflow: hidden;
+.info-wrapper{
+  position: absolute;
+  top: 190px;
+  width: 220px;
+  background-image: url("./_images/cards_background.png");
 }
 
-.profile-info{
-  display: flex;
-  align-items: center; 
-  width: 200px;
-  height: 30px;
-  margin-bottom: 10px;
+.info-container{
+  margin: 10px;
+  margin-top: 30px;
+  background: white;
 }
 
 .profile-name {
+  color: black;
+  display: flex;
+  align-items: center; 
   font-size: 13px;
   font-weight: 700;
-  margin-right: 5px;
+  padding: 25px 8px 0 8px;
 }
 
 .nav-symbols {
@@ -65,7 +86,22 @@
 
 .profile-description {
   margin-bottom: 10px;
+  padding: 10px 8px 8px 8px;
+}
+
+#description {
+  background-color: white;
+  padding: 5px 8px 8px 8px;
   text-align: left;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.5;
 }
+
+/* .profile-background-1{
+  background-image: url("./_images/cards_background.png");
+}
+
+
+.profile-background-2{
+  background-image: url("./_images/cards_background.png");
+} */
