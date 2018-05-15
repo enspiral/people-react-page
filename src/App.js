@@ -30,7 +30,9 @@ class App extends Component {
     let { people } = this.state
     return (
       <div className='App'>
+        <div className='community-titles'>Ambassadors</div>
         {people ? <Ambassadors ambassadors={people} /> : <div />}
+        <div className='community-titles'>Members & Contributors</div>
         {people ? <ProfilesGrid people={people} /> : <div />}
       </div>
     )

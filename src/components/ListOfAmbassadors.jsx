@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import AmbassadorImage from './AmbassadorImage'
+import AmbassadorImage from './atoms/AmbassadorImage'
 
 class ListOfAmbassadors extends Component {
   render() {

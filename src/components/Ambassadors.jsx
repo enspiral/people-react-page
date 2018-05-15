@@ -1,7 +1,7 @@
 import React from 'react';
 import { map } from 'lodash'
 
-import ListOfAmbassadors from './atoms/ListOfAmbassadors'
+import ListOfAmbassadors from './ListOfAmbassadors'
 
 function Ambassadors(props) {
   const { ambassadors } = props

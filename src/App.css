@@ -1,6 +1,7 @@
 .App {
+  padding-top: 20px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -28,24 +29,30 @@
   to { transform: rotate(360deg); }
 }
 
+.community-titles{
+  padding: 25px 0 0 50px;
+  text-align: left;
+  font-size: 1.2em;
+}
+
 .ambassadors {
   display: flex;
+  justify-content: space-between;
   flex-flow: row wrap;
-  /* width: 85%; */
-  height: 100px;
+  width: 90%;
+  padding-left: 40px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 40px
 }
 
 .ambassador-lists {
-  margin: 8px;
+  border: 5px solid cadetblue;
+  width: 120px;
+  height: 120px; 
+  border-radius: 50%;
 }
 
-#ambassador-image {
-  border: 5px solid cadetblue;
+#ambassador-image-id {
   border-radius: 50%;
 }
 
