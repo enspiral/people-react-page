@@ -11,19 +11,18 @@ import ShowWebsite from './atoms/ShowWebsite'
 class ProfileCard extends Component {
   render(){
     const {person} = this.props
-    console.log(person)
     return (
       <div className='profile-cards'>
-        {person['Personal email'] ? <ProfileImage image={'https://www.gravatar.com/avatar/' + md5(person['Personal email'].toLowerCase()) + '?s=200'} /> : <div/>}
+        {person ? <ProfileImage image={person.gravatarUrl} /> : <div/>}
         <div className='profile-info'>
-          {person.Name ? <ProfileName name={person.Name} /> : <span/>}
+          {person ? <ProfileName name={person.publicName} /> : <span/>}
           
-          {person.linkedin ? <ShowLinkedIn linkedin={person.linkedin}/> : <span/>}
-          {person.twitter ? <ShowTwitter twitter={person.twitter}/> : <span/>}
-          {person.website ? <ShowWebsite website={person.website}/> : <span/>}
+          {person ? <ShowLinkedIn linkedin={person.publicLinkedin}/> : <span/>}
+          {person ? <ShowTwitter twitter={person.publicTwitter}/> : <span/>}
+          {person ? <ShowWebsite website={person.publicWebsite}/> : <span/>}
         </div>
 
-        {person['Your bio / introduction'] ? <ProfileDescription description={person['Your bio / introduction']}/> : <span/> }
+        {person ? <ProfileDescription description={person.publicDescription}/> : <span/> }
       </div>
     )
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Masonry from 'react-masonry-component';
+import {map} from 'lodash'
 
 import ProfileCard from './ProfileCard'
 
@@ -19,7 +20,10 @@ function ProfilesGrid (props) {
       updateOnEachImageLoad={false} 
       imagesLoadedOptions={imagesLoadedOptions} 
       >
-      { people.map((item) => {return <ProfileCard person={item}/>})}
+      {/* {people.forEach((item, key) => {return <ProfileCard person={item}/>})} */}
+      {map(people, (person, key) => {
+        return <ProfileCard key={key} person={person} />
+      }) }
       </Masonry>
   )
 }

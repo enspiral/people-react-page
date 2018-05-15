@@ -5,6 +5,7 @@
   "dependencies": {
     "dotenv": "^5.0.1",
     "js-md5": "^0.7.3",
+    "lodash": "^4.17.10",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-localstorage-hoc": "0.0.2",
