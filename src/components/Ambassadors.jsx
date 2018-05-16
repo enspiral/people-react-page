@@ -8,7 +8,7 @@ function Ambassadors(props) {
   return (
     <div className='ambassadors'>
       {map(ambassadors, (ambassador, key) => {
-        return <ListOfAmbassadors key={key} ambassador={ambassador} />
+        return ambassador.isAmbassador && <ListOfAmbassadors key={key} ambassador={ambassador} />
       })}
     </div>
   )

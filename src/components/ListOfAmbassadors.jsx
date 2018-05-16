@@ -8,7 +8,7 @@ class ListOfAmbassadors extends Component {
     console.log = (ambassador)
     return (
       <div className='ambassador-lists'>
-        {ambassador ? <AmbassadorImage image={ambassador.gravatarUrl} /> : <div />}
+        {ambassador ? <AmbassadorImage image={ambassador.gravatarUrl} /> : <div/>}
       </div>
       )
     }
