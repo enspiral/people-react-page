@@ -11,6 +11,7 @@ const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 function ProfilesGrid (props) {
   const { people } = props
+  // console.log(people)
   return (
     <Masonry
       className={'my-gallery-class'} 

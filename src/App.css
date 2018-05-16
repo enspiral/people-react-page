@@ -1,6 +1,7 @@
 .App {
+  padding-top: 20px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -28,27 +29,43 @@
   to { transform: rotate(360deg); }
 }
 
+.community-titles{
+  padding: 25px 0 0 50px;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
 .ambassadors {
   display: flex;
+  justify-content: space-between;
   flex-flow: row wrap;
+  width: 90%;
+  padding-left: 40px;
   height: 100px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 40px
 }
 
 .ambassador-lists {
-  margin: 8px;
-}
-
-#ambassador-image {
-  border: 5px solid cadetblue;
+  border: 5px solid rgb(145, 1, 125);
+  width: 120px;
+  height: 120px; 
   border-radius: 50%;
 }
 
-.profile-cards {
+#ambassador-image-id {
+  border-radius: 50%;
+}
+
+.profile-cards-contributor {
+  margin: 10px;
+  width: 220px;
+  background: rgb(220, 225, 223);
+}
+
+.profile-cards-member {
+  /* border: 5px solid rgb(145, 1, 125); */
   margin: 10px;
   width: 220px;
   background: rgb(220, 225, 223);
@@ -60,7 +77,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: row wrap;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .social-icon-container {
@@ -72,16 +89,48 @@
   margin:0 3px 0 3px;
 }
 
-.info-wrapper{
-  position: absolute;
-  top: 190px;
+.info-wrapper-1{
+  position: relative;
+  margin-top: -65px;
+  padding-top: 55px;
   width: 220px;
-  background-image: url("./_images/cards_background.png");
+  background-image: url("./_images/people-info-bk.svg");
+  background-size: cover;
 }
+/* Randomise backgrounds */
+    .info-wrapper-2{
+      position: relative;
+      /* top: 160px; */
+      margin-top: -65px;
+      padding-top: 55px;
+      width: 220px;
+      background-image: url("./_images/people-info-bk-2.svg");
+      background-size: cover;
+    }
+
+    .info-wrapper-3{
+      position: relative;
+      /* top: 160px; */
+      margin-top: -65px;
+      padding-top: 55px;
+      width: 220px;
+      background-image: url("./_images/people-info-bk-3.svg");
+      background-size: cover;
+    }
+
+    .info-wrapper-4{
+      position: relative;
+      /* top: 160px; */
+      margin-top: -65px;
+      padding-top: 55px;
+      width: 220px;
+      background-image: url("./_images/people-info-bk-4.svg");
+      background-size: cover;
+    }
+/* end of randomised background  */
 
 .info-container{
-  margin: 10px;
-  margin-top: 30px;
+  margin: 0px 10px 10px 10px;
 }
 
 .profile-name {
@@ -90,7 +139,6 @@
   font-weight: 700;
   padding: 0 8px 0 8px;
 }
-
 
 .profile-description {
   margin-bottom: 10px;

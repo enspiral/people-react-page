@@ -1,14 +1,14 @@
 import React from 'react';
 import { map } from 'lodash'
 
-import ListOfAmbassadors from './atoms/ListOfAmbassadors'
+import ListOfAmbassadors from './ListOfAmbassadors'
 
 function Ambassadors(props) {
   const { ambassadors } = props
   return (
     <div className='ambassadors'>
       {map(ambassadors, (ambassador, key) => {
-        return <ListOfAmbassadors key={key} ambassador={ambassador} />
+        return ambassador.isAmbassador && <ListOfAmbassadors key={key} ambassador={ambassador} />
       })}
     </div>
   )
