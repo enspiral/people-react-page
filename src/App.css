@@ -70,7 +70,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: row wrap;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .social-icon-container {
@@ -82,16 +82,43 @@
   margin:0 3px 0 3px;
 }
 
-.info-wrapper{
+.info-wrapper-1{
   position: absolute;
-  top: 190px;
+  top: 160px;
   width: 220px;
-  background-image: url("./_images/cards_background.png");
+  /* height: 350px;   */
+  background-image: url("./_images/people-info-bk.svg");
+  background-size: cover;
 }
+/* Randomise backgrounds */
+    .info-wrapper-2{
+      position: absolute;
+      top: 160px;
+      width: 220px;
+      background-image: url("./_images/people-info-bk-2.svg");
+      background-size: cover;
+    }
+
+    .info-wrapper-3{
+      position: absolute;
+      top: 160px;
+      width: 220px;
+      background-image: url("./_images/people-info-bk-3.svg");
+      background-size: cover;
+    }
+
+    .info-wrapper-4{
+      position: absolute;
+      top: 160px;
+      width: 220px;
+      background-image: url("./_images/people-info-bk-4.svg");
+      background-size: cover;
+    }
+/* end of randomised background  */
 
 .info-container{
   margin: 10px;
-  margin-top: 30px;
+  margin-top: 57px;
 }
 
 .profile-name {
@@ -101,25 +128,15 @@
   padding: 0 8px 0 8px;
 }
 
-
 .profile-description {
   margin-bottom: 10px;
   padding: 10px 8px 8px 8px;
 }
 
 #description {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 5px 8px 8px 8px;
   text-align: left;
   font-size: 12px;
   line-height: 1.4;
 }
-
-/* .profile-background-1{
-  background-image: url("./_images/cards_background.png");
-}
-
-
-.profile-background-2{
-  background-image: url("./_images/cards_background.png");
-} */
