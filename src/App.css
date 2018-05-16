@@ -42,6 +42,7 @@
   flex-flow: row wrap;
   width: 90%;
   padding-left: 40px;
+  height: 100px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
 }
@@ -68,7 +69,6 @@
   margin: 10px;
   width: 220px;
   background: rgb(220, 225, 223);
-  /* box-shadow:  0.5px 0.5px 0.5px 0.5px grey; */
 }
 
 .info-header{
@@ -143,10 +143,7 @@
 .profile-description {
   margin-bottom: 10px;
   padding: 10px 8px 8px 8px;
-}
-
-#description {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 5px 8px 8px 8px;
   text-align: left;
   font-size: 12px;
