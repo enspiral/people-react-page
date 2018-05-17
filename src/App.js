@@ -3,7 +3,7 @@ import persist from 'react-localstorage-hoc'
 
 import './App.css'
 
-import ListOfAmbassadors from './components/ListOfAmbassador'
+import ListOfAmbassadors from './components/ListOfAmbassadors'
 import ProfilesGrid from './components/ProfilesGrid'
 
 class App extends Component {
