@@ -6,7 +6,9 @@ import faGlobe from '@fortawesome/fontawesome-free-solid/faGlobe'
 function DisplayWebsite (props) {
   const {website} = props  
   return (
-      <a href={website}><FontAwesomeIcon icon={faGlobe} /></a>
+    <div className='social-icons'>
+      <a href={website} target="_blank"><FontAwesomeIcon icon={faGlobe} size='1' color='darkgrey'/></a>
+    </div>
     );
 }
 

@@ -22,7 +22,7 @@ class App extends Component {
           people: data
         })
       }).catch((err) => {
-        // console.log('Big ooooooops! ', err)
+        console.log('Big ooooooops! ', err)
       })
   }
 
