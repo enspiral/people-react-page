@@ -11,20 +11,22 @@ const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 function ProfilesGrid (props) {
   const { people } = props
-  // console.log(people)
   return (
-    <Masonry
-      className={'my-gallery-class'} 
-      elementType={'ul'} 
-      options={masonryOptions} 
-      disableImagesLoaded={false} 
-      updateOnEachImageLoad={false} 
-      imagesLoadedOptions={imagesLoadedOptions} 
-      >
-      {map(people, (person, key) => {
-        return <ProfileCard key={key} person={person} />
-      }) }
-      </Masonry>
+    <div>
+      <div className='community-titles'>Members & Contributors</div>
+      <Masonry
+        className={'my-gallery-class'} 
+        elementType={'ul'} 
+        options={masonryOptions} 
+        disableImagesLoaded={false} 
+        updateOnEachImageLoad={false} 
+        imagesLoadedOptions={imagesLoadedOptions} 
+        >
+        {map(people, (person, key) => {
+          return <ProfileCard key={key} person={person} />
+        }) }
+        </Masonry>
+    </div>
   )
 }
 
