@@ -7,7 +7,7 @@ function DisplayLinkedIn (props) {
   const {linkedin} = props
     return (
       <div className='social-icons'>
-        <a href={linkedin}><FontAwesomeIcon icon={["fab", "linkedin"]} size='1' color='darkgrey'/></a>
+        <a href={linkedin} target="_blank"><FontAwesomeIcon icon={["fab", "linkedin"]} size='1' color='darkgrey'/></a>
       </div>
     );
 }

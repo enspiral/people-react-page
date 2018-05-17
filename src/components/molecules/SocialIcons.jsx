@@ -12,7 +12,7 @@ function InfoHeader(props) {
         {person.publicLinkedIn ? <DisplayLinkedIn linkedin={person.publicLinkedIn} /> : <span />}
         {person.publicTwitter ? <DisplayTwitter twitter={person.publicTwitter} /> : <span />}
         {person.publicWebsite ? <DisplayWebsite website={person.publicWebsite} /> : <span />}
-        {person.publicEmail ? <DisplayEmail website={person.publicEmail} /> : <span />}
+        {person.publicEmail ? <DisplayEmail email={person.publicEmail} /> : <span />}
       </div>
   );
 }
