@@ -3,7 +3,7 @@ import persist from 'react-localstorage-hoc'
 
 import './App.css'
 
-import Ambassadors from './components/Ambassadors'
+import ListOfAmbassadors from './components/ListOfAmbassador'
 import ProfilesGrid from './components/ProfilesGrid'
 
 class App extends Component {
@@ -31,7 +31,7 @@ class App extends Component {
     return (
       <div className='App'>
         <div className='community-titles'>Ambassadors</div>
-        {people ? <Ambassadors ambassadors={people} /> : <div />}
+        {people ? <ListOfAmbassadors ambassadors={people} /> : <div />}
         <div className='community-titles'>Members & Contributors</div>
         {people ? <ProfilesGrid people={people} /> : <div />}
       </div>
