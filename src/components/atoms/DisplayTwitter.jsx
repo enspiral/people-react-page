@@ -7,7 +7,7 @@ function DisplayTwitter (props) {
   const {twitter} = props
     return (
       <div className='social-icons'>
-        <a href={twitter}><FontAwesomeIcon icon={["fab", "twitter"]} size='1' color='darkgrey'/></a>
+        <a href={twitter} target="_blank"><FontAwesomeIcon icon={["fab", "twitter"]} size='1' color='darkgrey'/></a>
       </div>
     );
 }
