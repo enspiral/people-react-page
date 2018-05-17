@@ -1,5 +1,6 @@
 import React from 'react';
 import { map } from 'lodash'
+import SkyLight from 'react-skylight'
 
 import ListOfAmbassadors from './ListOfAmbassadors'
 

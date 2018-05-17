@@ -48,6 +48,7 @@
 }
 
 .ambassador-lists {
+  cursor: pointer;
   border: 5px solid rgb(145, 1, 125);
   width: 120px;
   height: 120px; 
