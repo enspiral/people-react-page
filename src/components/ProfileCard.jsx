@@ -7,6 +7,8 @@ import InfoDescription from './atoms/InfoDescription'
 class ProfileCard extends Component {
   render(){
     const {person} = this.props
+    // console.log(person) 
+    // Uncaught TypeError: console.log is not a function
     function randomiseCardBK () {
       const index = Math.floor(Math.random() * 4)
       return `info-wrapper-${index + 1}`
