@@ -7,7 +7,6 @@ import InfoDescription from './atoms/InfoDescription'
 class ProfileCard extends Component {
   render(){
     const {person} = this.props
-    console.log(person)
     function randomiseCardBK () {
       const index = Math.floor(Math.random() * 4)
       return `info-wrapper-${index + 1}`

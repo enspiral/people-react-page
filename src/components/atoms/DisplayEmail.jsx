@@ -5,7 +5,6 @@ import envelope from '@fortawesome/fontawesome-free-solid/faEnvelope'
 
 function DisplayEmail(props) {
   const { email } = props
-  console.log(email)
   return (
     <div className='social-icons'>
       <a href={"mailto:" + email}><FontAwesomeIcon icon={envelope} size='1' color='darkgrey'/></a>
