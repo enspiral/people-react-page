@@ -1,17 +1,22 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import { map } from 'lodash'
 
-import AmbassadorImage from './atoms/AmbassadorImage'
+import Ambassador from './Ambassador'
 
-class ListOfAmbassadors extends Component {
-  render() {
-    const { ambassador } = this.props
-    return (
-      <div className='ambassador-lists'>
-        {ambassador ? <AmbassadorImage image={ambassador.gravatarUrl} /> : <div/>}
-      </div>
+class ListOfAmbassadors extends React.Component {
+  render () {
+    const { ambassadors } = this.props
+      return (
+        <div>
+          <div className='community-titles'>Ambassadors</div>
+          <div className='ambassadors'>
+            {map(ambassadors, (ambassador, key) => {
+              return ambassador.isAmbassador && 
+                <Ambassador key={key} ambassador={ambassador} /> 
+            })}
+          </div>
+        </div>
       )
     }
-  }
-  
-  export default ListOfAmbassadors;
-  
+}
+export default ListOfAmbassadors;
