@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import persist from 'react-localstorage-hoc'
 
+import { config } from './config.js'
 import './App.css'
 
 import ListOfAmbassadors from './components/ListOfAmbassadors'
@@ -38,7 +39,7 @@ class App extends Component {
 }
 
 function getPeople () {
-  return window.fetch(process.env.REACT_APP_PERSON_API_URL, {
+  return window.fetch(config.apiPeople, {
     method: 'get'
   }).then((response) => {
     console.info('Api request success: ', response)
