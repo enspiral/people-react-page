@@ -5,14 +5,14 @@ import Ambassador from './Ambassador'
 
 class ListOfAmbassadors extends Component {
   render () {
-    const { ambassadors } = this.props
+    const { people } = this.props
     return (
       <div>
         <div className='community-titles'>Ambassadors</div>
         <div className='ambassadors'>
-          {map(ambassadors, (ambassador, key) => {
-            return ambassador.isAmbassador &&
-              <Ambassador key={key} ambassador={ambassador} />
+          {map(people, (person, key) => {
+            return person.isAmbassador &&
+              <Ambassador key={key} ambassador={person} />
           })}
         </div>
       </div>

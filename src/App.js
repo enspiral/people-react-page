@@ -31,7 +31,7 @@ class App extends Component {
     let { people } = this.state
     return (
       <div className='App'>
-        {people && <ListOfAmbassadors ambassadors={people} />}
+        {people && <ListOfAmbassadors people={people} />}
         {people && <ProfilesGrid people={people} />}
       </div>
     )
