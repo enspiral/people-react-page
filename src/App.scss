@@ -1,6 +1,6 @@
 
 // Note: Shopify doesn't support sass import statements so all styling should be provided in this one file
-// The code snippets for the production urls of image assets are commented out for reference  
+// We are manually replacing urls for production in a gulp script - so all urls should here will only work in dev until the gulp file is updated.
 
 .App {
   padding-top: 20px;
@@ -98,7 +98,6 @@
   padding-bottom: 1px;
   width: 210px;
   background-image: url("./_images/people-info-bk-1.svg");
-  //background-image: url("{{ 'people-info-bk-1.svg' | asset_url }}");
   background-size: cover;
 }
 
@@ -109,7 +108,6 @@
   padding-bottom: 1px;
   width: 210px;
   background-image: url("./_images/people-info-bk-2.svg");
-  //background-image: url("{{ 'people-info-bk-2.svg' | asset_url }}");
   background-size: cover;
 }
 
@@ -120,7 +118,6 @@
   padding-bottom: 1px;
   width: 210px;
   background-image: url("./_images/people-info-bk-3.svg");
-  //background-image: url("{{ 'people-info-bk-3.svg' | asset_url }}");
   background-size: cover;
 }
 
@@ -131,7 +128,6 @@
   padding-bottom: 1px;
   width: 210px;
   background-image: url("./_images/people-info-bk-4.svg");
-  //background-image: url("{{ 'people-info-bk-4.svg' | asset_url }}");
   background-size: cover;
 }
 
@@ -209,7 +205,6 @@
 
 .ambassador-banner {
   background-image: url("./_images/ribbon.svg");
-  //background-image: url("{{ 'ribbon.svg' | asset_url }}");
   background-position: center;
   background-size: cover;
   margin: 0 auto 0 -25px;
