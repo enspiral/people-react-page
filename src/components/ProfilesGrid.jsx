@@ -1,12 +1,12 @@
-import React from 'react';
-import Masonry from 'react-masonry-component';
+import React from 'react'
+import Masonry from 'react-masonry-component'
 import {map} from 'lodash'
 
 import ProfileCard from './ProfileCard'
 
 const masonryOptions = {
   transitionDuration: 0
-};
+}
 const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 function ProfilesGrid (props) {
@@ -15,19 +15,20 @@ function ProfilesGrid (props) {
     <div>
       <div className='community-titles'>Members & Contributors</div>
       <Masonry
-        className={'my-gallery-class'} 
-        elementType={'ul'} 
-        options={masonryOptions} 
-        disableImagesLoaded={false} 
-        updateOnEachImageLoad={false} 
-        imagesLoadedOptions={imagesLoadedOptions} 
-        >
+        className={'my-gallery-class'}
+        elementType={'ul'}
+        options={masonryOptions}
+        disableImagesLoaded={false}
+        updateOnEachImageLoad={false}
+        imagesLoadedOptions={imagesLoadedOptions}
+      >
         {map(people, (person, key) => {
-          return <ProfileCard key={key} person={person} />
+          return !person.isAmbassador &&
+          <ProfileCard key={key} person={person} />
         }) }
-        </Masonry>
+      </Masonry>
     </div>
   )
 }
 
-export default ProfilesGrid;
+export default ProfilesGrid
