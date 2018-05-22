@@ -54,7 +54,6 @@
 
 .ambassador-lists {
   cursor: pointer;
-  border: 5px solid rgb(145, 1, 125);
   border-radius: 50%;
 }
 
@@ -75,7 +74,7 @@
 // }
 
 .profile-cards-member {
-  border: 5px solid #01267E;
+  border: 3px solid rgba(197, 53, 53, 0.719);
 }
 
 .social-icon-container {
@@ -92,7 +91,7 @@
 .info-wrapper-1 {
   position: relative;
   margin-top: -70px;
-  padding-top: 45px;
+  padding-top: 60px;
   padding-bottom: 1px;
   background-image: url("./_images/people-info-bk-1.svg");
   background-size: cover;
@@ -101,7 +100,7 @@
 .info-wrapper-2 {
   position: relative;
   margin-top: -70px;
-  padding-top: 45px;
+  padding-top: 60px;
   padding-bottom: 1px;
   background-image: url("./_images/people-info-bk-2.svg");
   background-size: cover;
@@ -110,7 +109,7 @@
 .info-wrapper-3 {
   position: relative;
   margin-top: -70px;
-  padding-top: 45px;
+  padding-top: 60px;
   padding-bottom: 1px;
   background-image: url("./_images/people-info-bk-3.svg");
   background-size: cover;
@@ -119,7 +118,7 @@
 .info-wrapper-4 {
   position: relative;
   margin-top: -70px;
-  padding-top: 45px;
+  padding-top: 60px;
   padding-bottom: 1px;
   background-image: url("./_images/people-info-bk-4.svg");
   background-size: cover;
