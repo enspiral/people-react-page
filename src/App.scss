@@ -67,17 +67,15 @@
   border-radius: 50%;
 }
 
-.profile-cards-contributor {
-  border: 5px solid rgba(0, 141, 196, 0.281);
-  margin: 10px;
-  width: 220px;
-  background: rgb(220, 225, 223);
+.card-container{
+  width: 250px;
 }
+
+// .profile-cards-contributor {
+// }
 
 .profile-cards-member {
   border: 5px solid #01267E;
-  margin: 10px;
-  background: rgb(220, 225, 223);
 }
 
 .social-icon-container {
@@ -96,7 +94,6 @@
   margin-top: -70px;
   padding-top: 45px;
   padding-bottom: 1px;
-  width: 210px;
   background-image: url("./_images/people-info-bk-1.svg");
   background-size: cover;
 }
@@ -106,7 +103,6 @@
   margin-top: -70px;
   padding-top: 45px;
   padding-bottom: 1px;
-  width: 210px;
   background-image: url("./_images/people-info-bk-2.svg");
   background-size: cover;
 }
@@ -116,7 +112,6 @@
   margin-top: -70px;
   padding-top: 45px;
   padding-bottom: 1px;
-  width: 210px;
   background-image: url("./_images/people-info-bk-3.svg");
   background-size: cover;
 }
@@ -126,7 +121,6 @@
   margin-top: -70px;
   padding-top: 45px;
   padding-bottom: 1px;
-  width: 210px;
   background-image: url("./_images/people-info-bk-4.svg");
   background-size: cover;
 }
@@ -167,15 +161,15 @@
 /* SkyLight */
 
 .skylight-dialog {
-  width: 300px !important;
+  width: 400px !important;
   height: auto !important;
   position: fixed;
   top: 50%;
-  left: 65% !important;
+  left: 60% !important;
   padding: 0px !important;
   margin-top: -300px !important;
   margin-left: -25%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(245, 244, 244)!important;
   border-radius: 2px;
   z-index: 100;
 }
@@ -184,44 +178,36 @@
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-.ambassador-wrapper {
-  border: 1px solid black;
-  /* height: 400px; */
-}
-
 .ambassador-image-skylight {
-  margin: 20px auto;
-  width: 150px;
-  height: 150px;
+  margin: auto;
+  padding-top: 15px;
+  width: 180px;
+  height: 180px;
   display: flex;
-}
-
-.ambassador-headshot {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .ambassador-banner {
   background-image: url("./_images/ribbon.svg");
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  margin: 0 auto 0 -25px;
-  width: 350px;
-  height: 80px;
+  background-size: 100%;
+  margin-top: -25px;
+  margin-left: -27px;
+  width: 453px;
+  height: 140px;
 }
 
 .ambassador-name {
   height: 30px;
-  margin: 10px 0 0 0;
+  margin-top: -20px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .ambassador-profile {
-  background-color: rgb(128, 60, 91);
   font-size: 14px;
-  text-align: left;
-  padding: 10px;
+  line-height: 1.4em;
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 30px;
 }
