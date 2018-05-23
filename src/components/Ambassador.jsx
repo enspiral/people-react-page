@@ -18,10 +18,10 @@ class Ambassador extends Component {
             <div className='ambassador-image-skylight'>
               {ambassador && <AmbassadorImage image={ambassador.gravatarUrl} />}
             </div>
-            <div className='ambassador-banner' />
+            <div className='ambassador-banner'> </div>
             <div className='ambassador-name'>{ambassador.publicName}</div>
             <div className='ambassador-profile'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula sem, tincidunt ut sollicitudin in, venenatis a mauris. Duis condimentum vulputate consectetur. Curabitur non neque iaculis, feugiat diam non, blandit enim. Phasellus id blandit neque. Aliquam vulputate, neque in tempus dapibus, neque est viverra ante, sit amet tincidunt justo erat vitae nunc. Aliquam sed risus enim. Donec vestibulum euismod tempor. Nulla fermentum, elit sit amet placerat dignissim, lectus tellus lacinia enim, non dictum ante justo ut nunc. Nulla in orci.
+              {ambassador.publicDesciption}
             </div>
           </div>
         </SkyLight>

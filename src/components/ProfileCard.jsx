@@ -7,7 +7,7 @@ class ProfileCard extends Component {
   render () {
     const {person} = this.props
     return (
-      <div className='cardContainer'>
+      <div className='card-container'>
         {person.contributorStatus === 'Member'
           ? <MemberCard person={person} />
           : <ContributorCard person={person} /> }
