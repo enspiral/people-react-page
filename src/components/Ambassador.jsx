@@ -18,10 +18,10 @@ class Ambassador extends Component {
             <div className='ambassador-image-skylight'>
               {ambassador && <AmbassadorImage image={ambassador.gravatarUrl} />}
             </div>
-            <div className='ambassador-banner'> </div>
+            <div className='ambassador-banner' />
             <div className='ambassador-name'>{ambassador.publicName}</div>
             <div className='ambassador-profile'>
-              {ambassador.publicDesciption}
+              {ambassador.publicDescription}
             </div>
           </div>
         </SkyLight>
@@ -30,5 +30,4 @@ class Ambassador extends Component {
   }
 }
 
-export default Ambassador;
-
+export default Ambassador
