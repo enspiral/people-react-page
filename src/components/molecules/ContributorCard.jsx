@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from '@material-ui/core/Card'
 
 import ProfileImage from '../atoms/ProfileImage'
 import InfoDescription from '../atoms/InfoDescription'
@@ -8,13 +9,13 @@ import InfoHeader from './InfoHeader'
 export function ContributorCard (props) {
   const person = props.person
   return (
-    <div className='profile-cards-contributor'>
+    <Card className='profile-cards-contributor'>
       <ProfileImage image={person.gravatarUrl} />
       <InfoBox>
         <InfoHeader person={person} />
         <InfoDescription description={person.publicDescription} />
       </InfoBox>
-    </div>
+    </Card>
   )
 }
 
