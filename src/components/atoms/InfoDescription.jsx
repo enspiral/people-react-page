@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class InfoDescription extends Component {
-  render() {
+function InfoDescription(props) {
     return (
         <div className='profile-description'>
-          {this.props.description}
+          {props.description}
         </div>
     );
-  }
 }
 
-export default InfoDescription;
+export default InfoDescription

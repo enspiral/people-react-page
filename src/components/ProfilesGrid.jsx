@@ -9,6 +9,10 @@ const masonryOptions = {
 }
 const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
+const style = {
+  padding: '0px'
+}
+
 function ProfilesGrid (props) {
   const { people } = props
   return (
@@ -16,6 +20,7 @@ function ProfilesGrid (props) {
       <div className='community-titles'>Members & Contributors</div>
       <Masonry
         className={'my-gallery-class'}
+        style={style}
         elementType={'ul'}
         options={masonryOptions}
         disableImagesLoaded={false}
