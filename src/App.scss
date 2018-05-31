@@ -128,15 +128,18 @@ $xlarge: 1400px;
 
 .card-wrapper{
   width: 231px;
-  margin: 2.5px;
-  @include respond-to('larger'){
-    width: 20%;
-  }
+  padding: 2.5px;
   @include respond-to('large'){
+    width: 33.3%;
+  }
+  @include respond-to('larger'){
     width: 25%;
   }
+  @include respond-to('xlarge'){
+    width: 20%;
+  }
   @include respond-to('medium'){
-    width: 33.3%;
+    width: 50%;
   }
   @include respond-to('small'){
     width: 100%;
