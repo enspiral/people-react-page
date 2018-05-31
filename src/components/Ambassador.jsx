@@ -15,7 +15,7 @@ class Ambassador extends Component {
 
     const dialogStyles = {
       width: '400px',
-      height: '500px',
+      height: 'auto',
       marginLeft: '-200px',
       marginTop: '-250px',
       left: '0%',
