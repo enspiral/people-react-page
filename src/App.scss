@@ -127,7 +127,6 @@ $xlarge: 1400px;
 }
 
 .card-wrapper{
-  width: 231px;
   padding: 2.5px;
   @include respond-to('large'){
     width: 33.3%;
