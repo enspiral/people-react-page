@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import persist from 'react-localstorage-hoc'
 
 import { config } from './config.js'
-import './App.css'
 
 import ListOfAmbassadors from './components/ListOfAmbassadors'
 import ProfilesGrid from './components/ProfilesGrid'
