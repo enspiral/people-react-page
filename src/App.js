@@ -38,7 +38,7 @@ class App extends Component {
 }
 
 function getPeople () {
-  const url = process.env.NODE_ENV === 'development' ? config.apiPeople : config.shopifyProxy
+  const url = config.apiPeople
   return window.fetch(url, {
     method: 'get'
   }).then((response) => {
