@@ -27,10 +27,9 @@ function ProfilesGrid (props) {
         updateOnEachImageLoad={false}
         imagesLoadedOptions={imagesLoadedOptions}
       >
-        {map(people, (person, key) => {
-          return !person.isAmbassador &&
+        {map(people, (person, key) => ( 
           <ProfileCard key={key} person={person} />
-        }) }
+        )}
       </Masonry>
     </div>
   )
