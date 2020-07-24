@@ -9,7 +9,11 @@ export function ContributorCard (props) {
   const person = props.person
   return (
     <div className='profile-card profile-card__contributor'>
-      <ProfileImage image={person.gravatarUrl} />
+      {
+        person.useGravatar
+        ? <ProfileImage image={person.gravatarUrl} />
+        : <ProfileImage image={person.publicProfileAirtableUrl} />
+      }
       <InfoBox>
         <InfoHeader person={person} />
         <InfoDescription description={person.publicDescription} />

@@ -13,6 +13,16 @@ const style = {
   padding: '0px'
 }
 
+function checkImage(imageSrc) {
+  var img = new Image();        
+  try {
+      img.src = imageSrc;
+      return true;
+  } catch(err) {
+      return false;
+  }    
+}
+
 function ProfilesGrid (props) {
   const { people } = props
   return (
@@ -29,9 +39,11 @@ function ProfilesGrid (props) {
         imagesLoadedOptions={imagesLoadedOptions}
       >
         {
-          map(people, (person, key) => ( 
-            <ProfileCard key={key} person={person} />
-          ))
+          map(people, (person, key) => {
+            if((person.useGravatar && checkImage(person.gravatarUrl)) || person.publicProfileAirtableUrl) {
+              return (<ProfileCard key={key} person={person} />)
+            }
+          })
         }
       </Masonry>
     </div>
