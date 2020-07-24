@@ -63,12 +63,12 @@ $xlarge: 1400px;
 
 @function calc-width($padding, $numCols) {
   @return 100/$numCols - $padding * $numCols * 1%
-}
+};
 
 .App {
   padding-top: 20px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins','Roboto', sans-serif;
 }
 
 .App-logo {
@@ -100,11 +100,29 @@ $xlarge: 1400px;
   }
 }
 
+.typography {
+  font-family: 'Poppins','Roboto', sans-serif;
+}
+
 .community-titles {
   padding: 25px 0 0 0;
-  text-align: left;
-  font-size: 1.2em;
-  font-weight: 700;
+  text-align: center;
+  font-weight: 500;
+  @include respond-to('large'){
+    font-size: 4em;
+  }
+  @include respond-to('larger'){
+    font-size: 4em;
+  }
+  @include respond-to('xlarge'){
+    font-size: 5em;
+  }
+  @include respond-to('medium'){
+    font-size: 3em;
+  }
+  @include respond-to('small'){
+    font-size: 1.5em;
+  }
 }
 
 $card-padding: 1.5;
@@ -114,10 +132,10 @@ $card-padding: 1.5;
     width: calc-width($card-padding, 3);
   }
   @include respond-to('larger'){
-    width: calc-width($card-padding, 4);
+    width: calc-width($card-padding, 3);
   }
   @include respond-to('xlarge'){
-    width: calc-width($card-padding, 5);
+    width: calc-width($card-padding, 4);
   }
   @include respond-to('medium'){
     width: calc-width($card-padding, 2);
@@ -127,8 +145,35 @@ $card-padding: 1.5;
   }
 }
 
-.profile-cards {
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+.profile-card {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25)!important;
+  border-radius: 1px!important;
+  &__member {
+    border-bottom: 10px solid #03A095;
+  }
+  &__contributor {
+    border-bottom: 10px solid #805298;
+  }
+}
+
+.profile-image {
+  height: auto;
+}
+
+.profile-name {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  line-height: 27px;
+}
+
+.profile-description {
+  background-color: rgba(255, 255, 255, 0.85);
+  text-align: justify;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .social-icon-container {
@@ -141,32 +186,14 @@ $card-padding: 1.5;
 }
 
 .info-container {
-  margin: 0px 10px -1px 10px;
-}
-
-.profile-name {
-  color: rgb(36, 36, 36);
-  font-size: 16px;
-  font-weight: 700;
-  padding: 0 0 0 8px;
+  margin: 10px 20px 0px 20px;
+  padding-bottom: 20px;
 }
 
 .info-header {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  padding: 10px 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: row wrap;
+  flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.85);
-}
-
-.profile-description {
-  padding: 10px 8px 8px 8px;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 5px 8px 8px 8px;
-  text-align: left;
-  font-size: 13px;
-  line-height: 1.4;
 }
