@@ -8,7 +8,7 @@ import InfoHeader from './InfoHeader'
 export function ContributorCard (props) {
   const person = props.person
   return (
-    <div className='profile-cards-contributor'>
+    <div className='profile-cards'>
       <ProfileImage image={person.gravatarUrl} />
       <InfoBox>
         <InfoHeader person={person} />

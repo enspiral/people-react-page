@@ -9,7 +9,7 @@ import InfoHeader from './InfoHeader'
 export function MemberCard (props) {
   const person = props.person
   return (
-    <Card className='profile-cards-member'>
+    <Card className='profile-cards'>
       <ProfileImage image={person.gravatarUrl} />
       <InfoBox>
         <InfoHeader person={person} />
