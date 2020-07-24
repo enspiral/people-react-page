@@ -125,6 +125,10 @@ $xlarge: 1400px;
   }
 }
 
+.cards {
+  width: 100%;
+}
+
 $card-padding: 1.5;
 .card-wrapper{
   padding: $card-padding * 1%;
