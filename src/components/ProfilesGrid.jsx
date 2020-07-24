@@ -17,7 +17,7 @@ function ProfilesGrid (props) {
   const { people } = props
   return (
     <div>
-      <div className='community-titles'>Members & Contributors</div>
+      <h1 className='community-titles'>Members & Contributors</h1>
       <Masonry
         className={'my-gallery-class'}
         style={style}
@@ -27,9 +27,11 @@ function ProfilesGrid (props) {
         updateOnEachImageLoad={false}
         imagesLoadedOptions={imagesLoadedOptions}
       >
-        {map(people, (person, key) => ( 
-          <ProfileCard key={key} person={person} />
-        )}
+        {
+          map(people, (person, key) => ( 
+            <ProfileCard key={key} person={person} />
+          ))
+        }
       </Masonry>
     </div>
   )
