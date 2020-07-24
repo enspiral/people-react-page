@@ -15,7 +15,6 @@ class ProfileCard extends Component {
   componentDidMount () {
     fetch(this.state.person.gravatarUrl)
       .then((res) => {
-        console.log('gravatarUrl status: ', res.status)
         this.setState({
           status: res.status
         })
