@@ -7,7 +7,7 @@ function DisplayEmail (props) {
   const { email } = props
   return (
     <div className='social-icons'>
-      <a href={'mailto:' + email}><FontAwesomeIcon icon={envelope} size='1x' color='darkgrey' /></a>
+      <a href={'mailto:' + email}><FontAwesomeIcon icon={envelope} size='1x' color='#353535' /></a>
     </div>
   )
 }
