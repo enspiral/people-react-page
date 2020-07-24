@@ -127,6 +127,8 @@ $xlarge: 1400px;
 
 .cards {
   width: 100%;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 $card-padding: 1.5;
