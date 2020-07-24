@@ -148,12 +148,14 @@ $card-padding: 1.5;
 .profile-card {
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25)!important;
   border-radius: 1px!important;
-  &__member {
-    border-bottom: 10px solid #805298;
-  }
-  &__contributor {
-    border-bottom: 10px solid #03A095;
-  }
+}
+
+.profile-card__member {
+  border-bottom: 10px solid #805298;
+}
+
+.profile-card__contributor {
+  border-bottom: 10px solid #03A095;
 }
 
 .profile-image {
