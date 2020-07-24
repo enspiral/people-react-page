@@ -13,17 +13,7 @@ const style = {
   padding: '0px'
 }
 
-function checkImage(imageSrc) {
-  var img = new Image();        
-  try {
-      img.src = imageSrc;
-      return true;
-  } catch(err) {
-      return false;
-  }    
-}
-
-function ProfilesGrid (props) {
+function ProfilesGrid(props) {
   const { people } = props
   return (
     <div className='typography'>
@@ -40,8 +30,10 @@ function ProfilesGrid (props) {
       >
         {
           map(people, (person, key) => {
-            if((person.useGravatar && checkImage(person.gravatarUrl)) || person.publicProfileAirtableUrl) {
-              return (<ProfileCard key={key} person={person} />)
+            if(person.showOnWebsite) {
+              if(person.useGravatar || person.publicProfileAirtableUrl) {
+                return (<ProfileCard key={key} person={person} />)
+              }
             }
           })
         }
