@@ -27,10 +27,10 @@ class App extends Component {
   }
 
   render () {
-    let { people } = this.state
+    const { people } = this.state
     return (
       <div className='App'>
-        {people && <ProfilesGrid people={people} />}
+        {people && <ProfilesGrid people={Object.values(people)} />}
       </div>
     )
   }

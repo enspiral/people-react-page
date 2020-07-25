@@ -37,7 +37,7 @@ class ProfileCard extends Component {
     }
   }
   render () {
-    const {person} = this.props
+    const { person } = this.props
     if (this.state.gravatarStatus !== 404 || this.state.airtableStatus !== 404) {
       return (
         <div className='card-wrapper'>
