@@ -8,23 +8,37 @@ class ProfileCard extends Component {
     super(props)
     this.state = {
       person: props.person,
-      status: 404
+      gravatarStatus: 404,
+      airtableStatus: 404
     }
   }
 
   componentDidMount () {
-    fetch(this.state.person.gravatarUrl)
+    if (this.state.person.gravatarUrl) {
+      fetch(this.state.person.gravatarUrl)
       .then((res) => {
         this.setState({
-          status: res.status
+          gravatarStatus: res.status
         })
       }).catch((err) => {
         console.log(err)
       })
+    }
+    if (this.state.person.publicProfileAirtableUrl) {
+      fetch(this.state.person.publicProfileAirtableUrl)
+      .then((res) => {
+        console.log(this.state.person.publicProfileAirtableUrl)
+        this.setState({
+          airtableStatus: res.status
+        })
+      }).catch((err) => {
+        console.log(err)
+      })
+    }
   }
   render () {
     const {person} = this.props
-    if (this.state.status !== 404 || this.state.person.publicProfileAirtableUrl) {
+    if (this.state.gravatarStatus !== 404 || this.state.airtableStatus !== 404) {
       return (
         <div className='card-wrapper'>
           {person.contributorStatus === 'Member'
