@@ -10,7 +10,8 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
-      people: null
+      people: null,
+      firstLoad: true
     }
   }
 
@@ -21,6 +22,12 @@ class App extends Component {
         this.setState({
           people: data
         })
+        if (this.state.firstLoad) {
+          this.setState({
+            firstLoad: false
+          })
+          window.location.reload()
+        }
       }).catch((err) => {
         console.log('Big ooooooops! ', err)
       })
