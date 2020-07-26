@@ -26,7 +26,7 @@ class App extends Component {
           this.setState({
             firstLoad: false
           })
-          window.location.reload()
+          this.forceUpdate()
         }
       }).catch((err) => {
         console.log('Big ooooooops! ', err)
