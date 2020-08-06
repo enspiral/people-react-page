@@ -10,6 +10,7 @@ config.js
 /coverage
 
 # production
+/build
 /src/styles/css
 
 # misc
