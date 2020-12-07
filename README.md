@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Dev Basics
+
+1. You'll need to create `src/config.js` with the correct paths/credentials
+2. Run `npm install && npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -18,7 +18,7 @@
     "react-skylight": "^0.5.1"
   },
   "scripts": {
-    "start": "concurrently \"npm run sass:watch\" \"react-scripts start\"",
+    "start": "npm run sass:build && concurrently \"npm run sass:watch\" \"react-scripts start\"",
     "build": "npm run sass:build && react-scripts build && gulp",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
