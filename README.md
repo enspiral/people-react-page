@@ -5,6 +5,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. You'll need to create `src/config.js` with the correct paths/credentials
 2. Run `npm install && npm start`
 
+## Deployment process
+
+run 
+
+```
+npm run build
+git push
+// go to github and release a nev version
+// go to squarespace and update the version number in the injected scripts to the latest tag
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

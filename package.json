@@ -37,6 +37,8 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "gulp": "^4.0.2",
+    "gulp-ignore": "^3.0.0",
+    "gulp-rename": "^2.0.0",
     "node-sass": "^4.14.1"
   }
 }

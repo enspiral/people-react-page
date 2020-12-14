@@ -1,6 +1,6 @@
-import gulp from 'gulp'
-import rename from 'gulp-rename'
-import ignore from 'gulp-ignore'
+var gulp = require('gulp')
+var rename = require('gulp-rename')
+var ignore = require('gulp-ignore')
 
 // DL: we need to overwrite the paths of any asset that we include in the build
 
@@ -27,4 +27,4 @@ const copyJs = (done) => {
 
 const defaultTasks = gulp.parallel(copyCss, copyJs)
 
-export default defaultTasks
+module.exports = defaultTasks
