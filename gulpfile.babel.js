@@ -27,4 +27,4 @@ const copyJs = (done) => {
 
 const defaultTasks = gulp.parallel(copyCss, copyJs)
 
-module.exports = defaultTasks
+module.exports.default = defaultTasks
